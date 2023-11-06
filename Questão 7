@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+    setlocale(LC_ALL ,"portuguese");
+    
+    int codigo;
+    
+    
+    printf("(1)Novo Jogo \n");
+    printf("(2)Carregar Jogo \n");
+    printf("(3)Configurações \n");
+    printf("Digite um dos códigos: ");
+    scanf("%i" ,&codigo);
+    system("cls || clear");
+    switch (codigo) {
+        
+        case 1:
+            printf("Carregando Novo Jogo... \n");
+        break;
+        
+        case 2:
+            printf("Carregando...tenha paciência \n");
+        break;
+        
+        case 3:
+            printf("-Controles- \n");
+            printf("-Idioma- \n");
+            printf("-Aúdio- \n");
+        break;
+        
+        default:
+            printf("Opção inválida");
+        break;
+    }
+    
+    
+    return 0;
+}
