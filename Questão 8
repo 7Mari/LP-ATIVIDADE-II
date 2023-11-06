@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+    setlocale(LC_ALL ,"portuguese");
+    
+    int codigo;
+    int numero;
+    int i = 0;
+    
+    
+    printf("--Personalização-- \n");
+    printf("(1)Pontilhado \n");
+    printf("(2)Estrelado \n");
+    printf("(3)Bolinhas \n");
+    printf("Digite um dos códigos: ");
+    scanf("%i" ,&codigo);
+    system("cls || clear");
+    switch (codigo) {
+        
+        case 1:
+            printf("Digite um número positivo: ");
+            scanf("%i" ,&numero);
+        
+            for (i = numero; i >= 0; i--){
+            printf("¨%d¨ \n" ,i);
+            }
+            
+        break;
+        
+        case 2:
+            printf("Digite um número positivo: ");
+            scanf("%i" ,&numero);
+        
+            for (i = numero; i >= 0; i--){
+            printf("*%d* \n" ,i);
+    }
+        break;
+        
+        case 3:
+            printf("Digite um número positivo: ");
+            scanf("%i" ,&numero);
+        
+            for (i = numero; i >= 0; i--){
+            printf("°%d° \n" ,i);
+    }
+        break;
+        
+        default:
+            printf("Opção inválida");
+        break;
+    }
+    
+    
+    
+    return 0;
+}
