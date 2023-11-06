@@ -1,0 +1,131 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+    setlocale(LC_ALL ,"portuguese");
+    
+    float valorCompra;
+    float valorFinal;
+    int dia;
+    float desconto;
+    
+    
+    printf("Informe o valor da sua compra: ");
+    scanf("%f" ,&valorCompra);
+    
+    
+    printf("(1)Domingo \n");
+    printf("(2)Segunda-Feira \n");
+    printf("(3)Terça-Feira \n");
+    printf("(4)Quarta-Feira \n");
+    printf("(5)Quinta-Feira \n");
+    printf("(6)Sexta-Feira \n");
+    printf("(7)Sabádo \n");
+    printf("Informe o Dia de hoje: ");
+    scanf("%i" ,&dia);
+    system("cls || clear");
+    switch (dia) {
+        
+        case 1:
+            
+            if(valorCompra > 100){
+                desconto = 0.15;
+                valorFinal = valorCompra - desconto;
+                printf("Total da Compra com Desconto: R$%.2f \n" ,valorFinal);
+                printf("Dia de Hoje: DOMINGO");
+            } else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: DOMINGO \n");
+            }
+        
+        break;
+        
+        case 2:
+            if(valorCompra > 100){
+            desconto = 0.10;
+            valorFinal = valorCompra - desconto;
+            
+            printf("Total da Compra com Desconto: %.2f \n" ,valorFinal);
+            printf("Dia de Hoje: SEGUNDA-FEIRA \n" );
+            }else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: SEGUNDA-FEIRA \n" );
+            }
+            
+        break;
+        
+        case 3:
+            if(valorCompra > 100){
+            desconto = 0.10;
+            valorFinal = valorCompra - desconto;
+            
+            printf("Total da Compra com Desconto: %.2f \n" ,valorFinal);
+            printf("Dia de Hoje: TERÇA-FEIRA \n" );
+            }else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: TERÇA-FEIRA \n" );
+            }
+        break;
+        
+        case 4:
+            if(valorCompra > 100){
+            desconto = 0.10;
+            valorFinal = valorCompra - desconto;
+            
+            printf("Total da Compra com Desconto: %.2f \n" ,valorFinal);
+            printf("Dia de Hoje: QUARTA-FEIRA \n" );
+            } else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: QUARTA-FEIRA \n" );
+            }
+        break;
+        
+        case 5:
+            if(valorCompra > 100){
+            desconto = 0.10;
+            valorFinal = valorCompra - desconto;
+            
+            printf("Total da Compra com Desconto: %.2f \n" ,valorFinal);
+            printf("Dia de Hoje: QUINTA-FEIRA \n" );
+            } else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: QUINTA-FEIRA \n" );
+            }
+        break;
+        
+        case 6:
+            if(valorCompra > 100){
+            desconto = 0.10;
+            valorFinal = valorCompra - desconto;
+            
+            printf("Total da Compra com Desconto: %.2f \n" ,valorFinal);
+            printf("Dia de Hoje: SEXTA-FEIRA \n" );
+            } else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: SEXTA-FEIRA \n" );
+            }
+        break;
+        
+        case 7:
+            if(valorCompra > 100){
+                desconto = 0.15;
+                valorFinal = valorCompra - desconto;
+                printf("Total da Compra com Desconto: %.2f \n" ,valorFinal);
+                printf("Dia de Hoje: SÁBADO");
+            } else {
+                printf("Valor da Compra: %.2f \n" ,valorCompra);
+                printf("Dia de Hoje: SÁBADO \n");
+            }
+
+        default:
+            printf("Opção Inválida!");
+        break;
+        
+    }
+    
+
+    
+    return 0;
+}
