@@ -9,11 +9,10 @@ int main() {
     int numero;
     float mediaPares = 0 ,mediaImpares = 0;
     int contadorPar= 0 ,contadorImpar = 0;
-    int i = 1;
     int somaPares = 0 ,somaImpares = 0;
     
         do {
-            printf("Digite o %d° número: " ,i);
+            printf("Digite um número: ");
             scanf("%d" ,&numero);
 
             if (numero > 0)
