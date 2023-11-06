@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+    setlocale(LC_ALL ,"portuguese");
+    
+    int operacao;
+    int numero1 ,numero2;
+    int soma ,subtracao;
+    
+    printf("Digite o 1º número: ");
+    scanf("%i" ,&numero1);
+    
+    printf("Digite o 2º número: ");
+    scanf("%i" ,&numero2);
+    
+    
+    printf("(1)Soma \n");
+    printf("(2)Subtração \n");
+    printf("Escolha uma operação: ");
+    scanf("%i" ,&operacao);
+    system("cls || clear");
+    switch (operacao) {
+        
+        case 1:
+            printf("Primeiro Número: %i \n" ,numero1);
+            printf("Segundo Número: %i \n" ,numero2);
+            
+            soma = numero1 + numero2;
+            printf("Soma dos Números Escolhidos: %i \n" ,soma);
+        break;
+        
+        case 2:
+            printf("Primeiro Número: %i \n" ,numero1);
+            printf("Segundo Número: %i \n" ,numero2);
+            
+            subtracao = numero1 - numero2;
+            printf("Subtração dos Números Escolhidos: %i \n" ,subtracao);
+        break;
+        
+        default:
+            printf("Opção inválida");
+        break;
+    }
+    
+    
+    
+    return 0;
+}
