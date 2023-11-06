@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+    setlocale(LC_ALL ,"portuguese");
+    
+    float grau;
+    
+    
+    printf("Digite a temperatura de hoje: \n");
+    scanf("%f" ,&grau);
+    
+    //Declarar Clima
+    
+    if (grau >= 25) {
+        printf("Clima Ensolarado!");
+    } else if (grau >= 15) {
+        printf("Clima Nublado!");
+    } else {
+        printf("Clima Chuvoso!");
+    }
+    
+
+    return 0;
+}
+
