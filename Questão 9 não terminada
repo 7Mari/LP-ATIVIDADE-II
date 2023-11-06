@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main() {
+    setlocale(LC_ALL ,"portuguese");
+    
+    int codigo;
+    int numero;
+    int i = 0;
+    
+    printf("Digite o dividendo positivo: ");
+    scanf("%i" ,&numero);
+    
+    printf("Digite o divisor positivo: ");
+    scanf("%i" ,&numero2);
+    
+    if(numero % numero != 0) {
+        
+    }
+        
+    
+    printf("(1)Verificar se é Número Primo \n");
+    printf("(2)Encerrar Processo \n");
+    printf("Digite um dos códigos: ");
+    scanf("%i" ,&codigo);
+    system("cls || clear");
+    switch (codigo) {
+        
+        case 1:
+            printf("Número Escolhido: %i" ,numero);
+            printf("Número Primo");
+            printf("Não é um Número Primo");
+            
+        break;
+        
+        case 2:
+            printf("Número Escolhido: %i" ,numero);
+            
+        
+            // (i = numero; i >= 0; i--){
+            //printf("*%d* \n" ,i);
+    }
+        break;
+        
+        default:
+            printf("Opção inválida");
+        break;
+    }
+    
+    
+    
+    return 0;
+}
